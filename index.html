@@ -1,0 +1,64 @@
+<html>
+<head>
+  <title>User Registration</title>
+  <link href="style.css" type="text/css"
+  rel="stylesheet" />
+  <script>
+	  function showInput() {
+		  var strText2 = document.getElementById("name").value;
+		  var srtText3 = document.getElementById("phoneNumber").value;
+		  var srtText4 = document.getElementById("email").value;
+		  var result = strText2 + ' ' + srtText3 + ' ' + srtText4;
+		  document.getElementById('spanDisplay').textContent = result;
+	  }
+  </script>
+
+</head>
+
+
+
+
+
+<body>
+		<div class="sign-up-container">
+					<div class="signup-heading">User Registration</div>
+					<div class="row">
+          
+					<div class="row">
+						<div class="inline-block">
+							<div class="form-label">
+								Full Name
+							</div>
+							<input class="input-box-330" type="email" id="name">
+						</div>
+					</div>
+					<div class="row">
+						<div class="inline-block">
+							<div class="form-label">
+								Phone Number
+							</div>
+							<input class="input-box-330" type="tel" id="phoneNumber">
+						</div>
+					</div>
+					<div class="row">
+						<div class="inline-block">
+							<div class="form-label">
+								Email
+							</div>
+							<input class="input-box-330" type="tel" id="email">
+						</div>
+					</div>
+					<div class="row">
+						<button class="btn" onclick="showInput()">Submit</button>
+					</div>
+
+					<div class="details"><br/>
+						<label class="details-header">User Registration Details</label>
+						<p><span id="spanDisplay"></span></p>
+					</div>
+			</div>
+			<p style="text-align:center; color: #fff;">Form by Ben Uwah</p>
+		</div>
+
+</body>
+</html>
